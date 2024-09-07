@@ -1,0 +1,23 @@
+
+
+Functions------------------------------------------------------------------------
+	1. Functions can be stored in variables.
+	2. If we call function without "()", it will give the whole function.
+	3. If we call function with proper way, it will give us the return value only.
+	4. Variables inside function called local variable.
+	5. Syntax: 
+			function function_name ( param 1, ...) {
+				return;
+			}
+
+
+Objects----------------------------------------------------------------------------
+	1. List of key:value pairs inside curly braces {}.
+	2. Key:value are known as properties.
+	3. We can access properties using  object_name.property_name  or  object_name["property_name"].
+	4. Properties can be function also.
+	5. When we use object property inside the object, we have to use "this" key word.
+	6. Objects are mutable.
+	7. Syntax: 
+			const object_name = { property_name: property_value, ... }
+	8. We can print objects using loop, Object.values(object_name), Object.entries(object_name), JSON.stringify(object_name).
