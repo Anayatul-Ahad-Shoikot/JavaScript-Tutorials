@@ -58,10 +58,10 @@ let hoistedString = "declared after printing it.";
     console.log('block scoped supported.' + scope);
 }
 function TestVariables(){
-    console.log('Different block scoped supported too.' + scope);
+    console.log('Block scoped not supported.' + scope);
 }
 TestVariables();
-console.log('Global scope supported too.' + scope);
+console.log('Global scope not supported.' + scope);
 
 
 
