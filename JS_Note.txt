@@ -21,3 +21,10 @@ Objects-------------------------------------------------------------------------
 	7. Syntax: 
 			const object_name = { property_name: property_value, ... }
 	8. We can print objects using loop, Object.values(object_name), Object.entries(object_name), JSON.stringify(object_name).
+	9. We can create objects by " Object Construction Function " also.
+		function Person(first, last, age, eye) {
+  			this.firstName = first;
+  			this.lastName = last;
+  			this.age = age;
+  			this.eyeColor = eye;
+		}
