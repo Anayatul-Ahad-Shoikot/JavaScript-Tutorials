@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>This is the object person.</h1>
+    <h3 id="object"></h3>
+    <Script>
+        const person = {
+            name: 'Ahad',
+            age: 25,
+            occupation: 'Student',
+            hobbies: ['reading', 'swimming', 'gaming'],
+            work: function () {
+                return "Nothing.";
+            }
+        }
+        person.vehicle = "Cycle";
+
+        function printObject(obj){
+            let text = "";
+            for( let x in obj ){
+                text += person[x] + ", ";
+            }
+            return text;
+        }
+        console.log(printObject(person));
+
+        const objarray = Object.values(person);
+        document.getElementById("object").innerText = objarray;
+    </Script>
+</body>
+</html>
