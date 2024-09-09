@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Classes</title>
+</head>
+<body>
+
+
+    <script>
+        class bank{
+            constructor(name, balance = 0){
+                this.name = name;
+                this.account = Math.random()*1000;
+                this. balance = balance;
+            }
+
+            cashIn(amount) {
+                this.balance += amount;
+            }
+
+            cashOut(amount) {
+                this.balance -= amount;
+            }
+
+            showCurrentStatus(){
+                return `Name : ${this.name}\nAccount No: ${this.account}\nCurrent Balance: ${this.balance}`;
+            }
+        }
+
+        const obj1 = new bank("ahad", 5000);
+        console.log(obj1.showCurrentStatus());
+        obj1.cashIn(500);
+        obj1.cashOut(90);
+        console.log(obj1.showCurrentStatus());
+
+
+        const obj2 = new bank("shoikot");
+        obj2.cashIn(790);
+        console.log(obj2.showCurrentStatus());
+
+    </script>
+</body>
+</html>
