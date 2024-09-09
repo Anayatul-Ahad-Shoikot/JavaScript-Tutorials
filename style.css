@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 4px solid darksalmon;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.row h1 {
+    color: blue;
+    text-decoration: underline;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.row .function {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: green;
+}
+
+.row .f_call {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: orange;
+}
+
+.row .result {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: rgb(219, 23, 23);
+}

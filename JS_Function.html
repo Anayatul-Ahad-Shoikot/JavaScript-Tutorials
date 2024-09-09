@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <h1>Basic Function:</h1>
+        <p id="function" class="function"></p>
+        <p id="f_call" class="f_call"></p>
+        Output: <p id="result" class="result"></p>
+    </div>
+
+    <div class="row">
+        <h1>Basic Function: (with parameter)</h1>
+        <p id="function2" class="function"></p>
+        Function Call:<p id="f_call2" class="f_call"></p>
+        Output: <p id="result2" class="result"></p>
+    </div>
+
+    <div class="row">
+        <h1>Anonymous Function:</h1>
+        <p id="function3" class="function"></p>
+        Function Call:<p id="f_call3" class="f_call"></p>
+        Output: <p id="result3" class="result"></p>
+    </div>
+
+
+    <script>
+
+        function printMyName(){
+            return "Anayatul Ahad Shoikot";
+        }
+        let printmyname_f = printMyName;
+        let printmyname_r = printMyName();
+        document.getElementById("function").innerText = printmyname_f;
+        document.getElementById("f_call").innerText = 'let printmyname_r = printMyName();';
+        document.getElementById("result").innerText = printmyname_r;
+
+
+        function printMyName2(name){
+            return name;
+        }
+        let printmyname_f2 = printMyName2;
+        let printmyname_r2 = printMyName2("ahad");
+        document.getElementById("function2").innerText = printmyname_f2;
+        document.getElementById("f_call2").innerText = 'let printmyname_r2 = printMyName2("ahad");';
+        document.getElementById("result2").innerText = printmyname_r2;
+
+
+        
+        let sum_f3 = function (a, b, c) { let res = a+b+c; return res; };
+        let restult_1 = sum_f3( 10, 20, 9);
+        document.getElementById("function3").innerText = sum_f3;
+        document.getElementById("f_call3").innerText = 'let restult_1 = sum_f3( 10, 20, 9);';
+        document.getElementById("result3").innerText = restult_1;
+    </script>
+</body>
+</html>
