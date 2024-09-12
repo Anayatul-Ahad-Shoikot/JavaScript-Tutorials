@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>window lLocation</title>
+</head>
+<body>
+  <p id="url"></p>
+  <button onclick="gotoHome()">Home</button>
+  <button onclick="Reloadd()">Reload</button>
+  <button onclick="fassign()">assign</button>
+  <button onclick="freplace()">replace</button>
+  <script>
+    console.log(window.location.href);       
+    console.log(window.location.hostname);
+    console.log(window.location.pathname);
+    console.log(window.location.protocol);
+    console.log(window.location.search);
+    console.log(window.location.hash);
+    function gotoHome() {
+      window.location.href = "/index.html";
+    }
+    function Reloadd(){
+      window.location.reload();
+    }
+
+    function fassign(){
+      window.location.assign('/index.html');
+    }
+    function freplace() {
+      window.location.replace('/index.html');
+    }
+
+  </script>
+</body>
+</html>
