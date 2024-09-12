@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Screen Info</title>
+</head>
+
+<body>
+    <p id="screenInfo"></p>
+
+    <script>
+        function getWindowSize(){
+            let width = window.screen.width;
+            let height = window.screen.height;
+            let colorDepth = window.screen.colorDepth;
+            window.document.getElementById("screenInfo").textContent = `Screen: ${width}px x ${height}px, Color Depth: ${colorDepth} bits`;
+        }
+    </script>
+</body>
+
+</html>

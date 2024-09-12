@@ -7,11 +7,21 @@
 </head>
 <body>
     <button onclick="gotoWindow()">BOM->WindowLocation</button>
+    <button onclick="gotoWindow2()">BOM->WindowHistory</button>
+    <button onclick="storage()">BOM->window_storage</button>
 
 
     <script>
         function gotoWindow(){
             window.location.href = "/BOM/window_location.html";
+        }
+
+        function gotoWindow2(){
+            window.location.href = "/BOM/window_history.html";
+        }
+
+        function storage(){
+            window.location.href = "/BOM/window_storage.html";
         }
 
     </script>

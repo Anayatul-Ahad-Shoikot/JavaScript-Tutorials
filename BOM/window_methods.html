@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Methods</title>
+</head>
+<body>
+    <button onclick="getPrompt()">prompt</button>
+    <button onclick="getAlert()">alert</button>
+    <button onclick=""></button>
+    <button onclick=""></button>
+    <button onclick="getWindow()">new window</button>
+    <form action="" onsubmit="return getConfirm()">
+        <input type="text">
+        <button type="submit">submit</button>
+    </form>
+    <h1 id="msg"></h1>
+
+
+    <script>
+        function getAlert(){
+            alert("Attention, this is an alert");
+        }
+
+        function getPrompt(){
+            let name = window.prompt("Enter your name:");
+            window.document.getElementById('msg').textContent = `Your name is: ${name}`;
+        }
+
+        function getConfirm(){
+            return window.confirm("Are you sure ?");
+        }
+
+        function getWindow(){
+            window.open("/test.html", "New Window", "height: 400px;width:300px")
+        }
+    </script>
+</body>
+</html>
