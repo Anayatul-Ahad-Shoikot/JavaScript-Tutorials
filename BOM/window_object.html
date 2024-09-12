@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window properties & methods</title>
+</head>
+<body>
+    <h1 id="heading"><i>What <br>is <span>BOM?</span></i></h1>
+    <br>
+    <p id="paragraph">BOM means document object model. And "window" is the core object of this BOM.</p>
+    <button onclick="changeHeading()">change</button>
+
+    <script>
+        call = 0
+        function changeHeading() {
+            if (call == 0) {
+                window.document.getElementById('heading').textContent = "Heading changed by window object";
+                call = 1;
+            } else {
+                call = 0;
+            }
+        }
+    </script>
+</body>
+</html>

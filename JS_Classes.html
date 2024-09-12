@@ -21,6 +21,8 @@
             }
 
             cashOut(amount) {
+                const charge = 50;
+                amount -= charge;
                 this.balance -= amount;
             }
 
@@ -39,6 +41,13 @@
         const obj2 = new bank("shoikot");
         obj2.cashIn(790);
         console.log(obj2.showCurrentStatus());
+
+
+        class premiumBank extends bank {
+            constructor(name, balance){
+                super(name, balance);
+            }
+        }
 
     </script>
 </body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Properties</title>
+</head>
+<body>
+    <h1 id="heading"><i>What is <span style="visibility: hidden;">DOM element?</span></i></h1>
+    <br>
+    <p id="paragraph"></p>
+    <br>
+    <p id="explain"></p>
+    <br>
+    <button onclick="InnerHTML()">innerHTML</button>
+    <button onclick="InnerText()">innerText</button>
+    <button onclick="TextContent()">textContent</button>
+    <button onclick="Refresh()">reset</button>
+
+    <script>
+        function InnerHTML() {
+            let heading = window.document.getElementById('heading').innerHTML;
+            window.document.getElementById('paragraph').textContent = heading;
+            window.document.getElementById('explain').innerHTML = ".innerHTML get/insert all the contents <b>with html tags.</b>";
+        }
+        function InnerText() {
+            let heading2 = window.document.getElementById('heading').innerText;
+            window.document.getElementById('paragraph').textContent = heading2;
+            window.document.getElementById('explain').textContent = "<b>.innerText get all the contents</b> without html tags and hidden elements.";
+        }
+        function TextContent() {
+            let heading3 = window.document.getElementById('heading').textContent;
+            window.document.getElementById('paragraph').textContent = heading3;
+            window.document.getElementById('explain').textContent = "<i>.textContent get all the contents without html tags but with hidden text.</i>";
+        }
+        function Refresh() {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>
