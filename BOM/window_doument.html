@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window.document</title>
+</head>
+<body>
+    <h1 id="heading">This is heading</h1>
+    <p id="paragraph">This is simple para.</p>
+    <button onclick="changeHeading()">change</button>
+
+    <script>
+        function changeHeading() {
+            window.document.getElementById('heading').textContent = "Heading changed by window object";
+        }
+    </script>
+</body>
+</html>
